@@ -37,30 +37,38 @@ Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Tr
                  * 2.Uber Trip Details.
 #### Data Structure:
 The dashboard leverages a star schema model based on two primary tables:
-               *   TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
-               *   Temporal Data: Trip ID, Pickup Time, Drop Off Time.
-               *   Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
-               *   Operational Data: Trip Distance, Vehicle.
-               *    LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
+                 * 1.   TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
+                 * 2.  Temporal Data: Trip ID, Pickup Time, Drop Off Time.
+                 * 3.  Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
+                 * 4.  Operational Data: Trip Distance, Vehicle.
+                 *  5.  LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
                *    Geographic Data: LocationID, Location (Area Name), City.
                
 ### Features:-
+
 ##### Business Problem
 A modern ride-hailing platform must continuously monitor and react to fluctuating demand to ensure service reliability, maximize revenue, and maintain driver satisfaction. Key challenges include: predicting peak hours, ensuring adequate vehicle supply in high-demand zones, and understanding which services (vehicle types) are the most profitable and popular.
+
 ##### Goal of the Dashboard
 To deliver a comprehensive, multi-layered visual tool that:
-Tracks core operational and financial KPIs in real-time.
-Identifies temporal patterns (peak hours, days of the week) for surge pricing and driver incentive optimization.
-Pinpoints high-value geographic zones for strategic driver placement.
-Analyzes the performance and profitability of different vehicle types.
-#Walkthrough of Key Visuals: Outcomes & Insights
+
+        * 1.Tracks core operational and financial KPIs in real-time.
+        * 2.Identifies temporal patterns (peak hours, days of the week) for surge pricing and driver incentive optimization.
+        * 3.Pinpoints high-value geographic zones for strategic driver placement.
+        * 4.Analyzes the performance and profitability of different vehicle types.
+        
+#####Walkthrough of Key Visuals: Outcomes & Insights
+
 The analysis views provide the following critical operational and business insights:
-KPIs Establish a Performance Baseline:
+
+#####KPIs Establish a Performance Baseline:
+
 The platform handled 103.7K bookings, generating $1.6M in revenue over the period, with an average trip being short (3 miles) and fast (16 minutes).
-Demand is Highly Concentrated at Night and on Weekends:
+##### Demand is Highly Concentrated at Night and on Weekends:
 Night-time trips account for a preference of 65.28% of bookings, signaling higher activity after standard business hours.
+
 The hourly/daily analysis confirms a clear surge in demand on Friday and Saturday evenings (Hours 16-23), which is the prime window for applying surge pricing to meet volume.
-Cash is the Dominant Transaction Method:
+##### Cash is the Dominant Transaction Method:
 Cash represents the overwhelmingly dominant Payment Type, making robust cash handling and reconciliation processes critical for financial security.
 UberX Drives Volume, While Premium Services Offer Higher Value:
 UberX is the highest volume and revenue generator, confirming its role as the mass-market standard.
