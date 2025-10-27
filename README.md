@@ -33,15 +33,15 @@ Pickup Hour (Calculated Column)	Extracts the hour (0-23) from the Pickup Time co
 Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Trip' based on the Pickup Hour (e.g., 6 AM - 6 PM is Day, otherwise Night).	TRIP DETAILS[Pickup Time]
 ## Data Source
 #### Source: Uber trip records of one month from Kaggle.
-                 * 1. Location Table .
+                 * 1.Location Table .
                  * 2.Uber Trip Details.
 #### Data Structure:
 The dashboard leverages a star schema model based on two primary tables:
-                 * 1. TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
-                 * 2. Temporal Data: Trip ID, Pickup Time, Drop Off Time.
-                 * 3. Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
-                 * 4. Operational Data: Trip Distance, Vehicle.
-                 * 5. LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
+                 * 1.TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
+                 * 2.Temporal Data: Trip ID, Pickup Time, Drop Off Time.
+                 * 3.Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
+                 * 4.Operational Data: Trip Distance, Vehicle.
+                 * 5.LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
                *    Geographic Data: LocationID, Location (Area Name), City.
                
 ### Features:-
@@ -49,7 +49,7 @@ The dashboard leverages a star schema model based on two primary tables:
 ##### Business Problem
 A modern ride-hailing platform must continuously monitor and react to fluctuating demand to ensure service reliability, maximize revenue, and maintain driver satisfaction. Key challenges include: predicting peak hours, ensuring adequate vehicle supply in high-demand zones, and understanding which services (vehicle types) are the most profitable and popular.
 
-##### Goal of the Dashboard
+#### Goal of the Dashboard
 To deliver a comprehensive, multi-layered visual tool that:
 
         * 1.Tracks core operational and financial KPIs in real-time.
@@ -57,25 +57,29 @@ To deliver a comprehensive, multi-layered visual tool that:
         * 3.Pinpoints high-value geographic zones for strategic driver placement.
         * 4.Analyzes the performance and profitability of different vehicle types.
         
-##### Walkthrough of Key Visuals: Outcomes & Insights
+#### Walkthrough of Key Visuals: Outcomes & Insights
 
 The analysis views provide the following critical operational and business insights:
 
-##### KPIs Establish a Performance Baseline:
+##### *KPIs Establish a Performance Baseline:
 
 The platform handled 103.7K bookings, generating $1.6M in revenue over the period, with an average trip being short (3 miles) and fast (16 minutes).
-##### Demand is Highly Concentrated at Night and on Weekends:
-Night-time trips account for a preference of 65.28% of bookings, signaling higher activity after standard business hours.
+##### *Demand is Highly Concentrated at Night and on Weekends:
+      *1. Night-time trips account for a preference of 65.28% of bookings, signaling higher activity after standard business hours.
 
-The hourly/daily analysis confirms a clear surge in demand on Friday and Saturday evenings (Hours 16-23), which is the prime window for applying surge pricing to meet volume.
+       *2. The hourly/daily analysis confirms a clear surge in demand on Friday and Saturday evenings (Hours 16-23), which is the prime window for applying surge pricing to meet volume.
+       
 ##### Cash is the Dominant Transaction Method:
 Cash represents the overwhelmingly dominant Payment Type, making robust cash handling and reconciliation processes critical for financial security.
-UberX Drives Volume, While Premium Services Offer Higher Value:
-UberX is the highest volume and revenue generator, confirming its role as the mass-market standard.
-The dashboard allows for checking the Average Booking Value of premium services like Uber Black or Uber Comfort to assess their profitability and strategic value in the luxury segment.
-Urban Hubs Drive Core Demand:
-The most frequent pickup and drop-off points are concentrated in key urban centers like Penn Station/Madison Sq West and the Upper East Side North, identifying high-traffic zones for targeted driver deployment and marketing efforts.
-Granular Data Supports Auditing and Validation:
+
+##### UberX Drives Volume, While Premium Services Offer Higher Value:
+      *1.UberX is the highest volume and revenue generator, confirming its role as the mass-market standard.
+      *2.The dashboard allows for checking the Average Booking Value of premium services like Uber Black or Uber Comfort to assess their profitability and strategic value in the luxury segment.
+      
+##### Urban Hubs Drive Core Demand:
+       *1.The most frequent pickup and drop-off points are concentrated in key urban centers like Penn Station/Madison Sq West and the  Upper East Side North, identifying high-traffic zones for targeted driver deployment and marketing efforts.
+       
+##### Granular Data Supports Auditing and Validation:
 The Details view allows users to pull up individual trip records for auditing purposes, essential for validating the aggregate trends and investigating any suspicious or outlier data (like the Surge Fee column).
 
 #### Overview KPIs (Baseline Performance)
