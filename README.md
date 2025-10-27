@@ -65,22 +65,22 @@ The analysis views provide the following critical operational and business insig
 
 The platform handled 103.7K bookings, generating $1.6M in revenue over the period, with an average trip being short (3 miles) and fast (16 minutes).
 ##### *Demand is Highly Concentrated at Night and on Weekends:
-      *1. Night-time trips account for a preference of 65.28% of bookings, signaling higher activity after standard business hours.
+       *1. Night-time trips account for a preference of 65.28% of bookings, signaling higher activity after standard business hours.
 
        *2. The hourly/daily analysis confirms a clear surge in demand on Friday and Saturday evenings (Hours 16-23), which is the prime window for applying surge pricing to meet volume.
        
-##### Cash is the Dominant Transaction Method:
-Cash represents the overwhelmingly dominant Payment Type, making robust cash handling and reconciliation processes critical for financial security.
+##### *Cash is the Dominant Transaction Method:
+       *.Cash represents the overwhelmingly dominant Payment Type, making robust cash handling and reconciliation processes critical for financial security.
 
-##### UberX Drives Volume, While Premium Services Offer Higher Value:
-      *1.UberX is the highest volume and revenue generator, confirming its role as the mass-market standard.
-      *2.The dashboard allows for checking the Average Booking Value of premium services like Uber Black or Uber Comfort to assess their profitability and strategic value in the luxury segment.
+##### (UberX Drives Volume, While Premium Services Offer Higher Value:
+      *.UberX is the highest volume and revenue generator, confirming its role as the mass-market standard.
+      *.The dashboard allows for checking the Average Booking Value of premium services like Uber Black or Uber Comfort to assess their profitability and strategic value in the luxury segment.
       
-##### Urban Hubs Drive Core Demand:
-       *1.The most frequent pickup and drop-off points are concentrated in key urban centers like Penn Station/Madison Sq West and the  Upper East Side North, identifying high-traffic zones for targeted driver deployment and marketing efforts.
+##### *Urban Hubs Drive Core Demand:
+       *.The most frequent pickup and drop-off points are concentrated in key urban centers like Penn Station/Madison Sq West and the  Upper East Side North, identifying high-traffic zones for targeted driver deployment and marketing efforts.
        
-##### Granular Data Supports Auditing and Validation:
-The Details view allows users to pull up individual trip records for auditing purposes, essential for validating the aggregate trends and investigating any suspicious or outlier data (like the Surge Fee column).
+##### *Granular Data Supports Auditing and Validation:
+       *.The Details view allows users to pull up individual trip records for auditing purposes, essential for validating the aggregate trends and investigating any suspicious or outlier data (like the Surge Fee column).
 
 #### Overview KPIs (Baseline Performance)
 ##### Total Booking: 
