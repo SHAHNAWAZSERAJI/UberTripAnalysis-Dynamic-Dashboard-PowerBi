@@ -1,12 +1,20 @@
 # UberTripAnalysis-Dynamic-Dashboard-PowerBi
-#🚗 UberTripAnalysis-Dynamic-PowerBi-Dashboard: Demand, Revenue, and Efficiency Dashboard
+# 🚗 UberTripAnalysis-Dynamic-PowerBi-Dashboard: Demand, Revenue, and Efficiency Dashboard
+
 The Uber Trip Analysis Dashboard is a dynamic, interactive data visualization tool designed to provide deep, actionable insights into Uber's ride-hailing operations. It focuses on analyzing key performance indicators (KPIs) related to trip volume, revenue, distance, and duration, enabling operational teams to optimize pricing strategies, improve driver deployment, and understand user behavior across time and geography.
-##Tech Stack
+
+## Tech Stack
 The dashboard was built using a robust Business Intelligence platform (like Power BI), Sql, Excel and relies heavily on Calculated Columns, Measures and  DAX (Data Analysis Expressions) for creating analytical measures. 
-📊 Business Intelligence Platform: Power BI Desktop– Main data visualization platform used for interactive report creation.
-📂 Data Preparation: Excel, SQL– Used for data extraction, cleaning, and preliminary transformation of the TRIP DETAILS and LOCATION TABLE.
-📂 Power Query:- Data transformation and cleaning layer for reshaping and preparing the data.
-📝 Data Modeling: Relationships established between the TRIP DETAILS (fact table) and the LOCATION TABLE (dimension table) via PULocationID and DOLocationID to enable seamless geographic analysis and enable cross-filtering and aggregation..
+
+## 📊 Business Intelligence Platform:
+Power BI Desktop– Main data visualization platform used for interactive report creation.
+
+## 📂 Data Preparation:
+Excel, SQL– Used for data extraction, cleaning, and preliminary transformation of the TRIP DETAILS and LOCATION TABLE.
+## 📂 Power Query:-
+Data transformation and cleaning layer for reshaping and preparing the data.
+## 📝 Data Modeling: 
+Relationships established between the TRIP DETAILS (fact table) and the LOCATION TABLE (dimension table) via PULocationID and DOLocationID to enable seamless geographic analysis and enable cross-filtering and aggregation..
 🧠 DAX Operations (Calculated Measures & Columns): Essential for transforming raw data into meaningful KPIs. Used for calculated measures, dynamic visuals, and conditional logic.
 📁 File Format – .pbix for development and .png for dashboard previews.
 
