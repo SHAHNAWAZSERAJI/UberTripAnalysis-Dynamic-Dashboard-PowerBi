@@ -35,13 +35,15 @@ Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Tr
 #### Source: Uber trip records of one month from Kaggle.
                  * 1. Location Table .
                  * 2.Uber Trip Details.
-####Data Structure: The dashboard leverages a star schema model based on two primary tables:
-               * TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
-               * Temporal Data: Trip ID, Pickup Time, Drop Off Time.
-               * Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
-               * Operational Data: Trip Distance, Vehicle.
-               * LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable names.
-               * Geographic Data: LocationID, Location (Area Name), City.
+#### Data Structure:
+The dashboard leverages a star schema model based on two primary tables:
+               *   TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
+               *   Temporal Data: Trip ID, Pickup Time, Drop Off Time.
+               *   Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
+               *   Operational Data: Trip Distance, Vehicle.
+               *    LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
+               *    Geographic Data: LocationID, Location (Area Name), City.
+               
 ### Features:-
 ##### Business Problem
 A modern ride-hailing platform must continuously monitor and react to fluctuating demand to ensure service reliability, maximize revenue, and maintain driver satisfaction. Key challenges include: predicting peak hours, ensuring adequate vehicle supply in high-demand zones, and understanding which services (vehicle types) are the most profitable and popular.
@@ -94,7 +96,7 @@ Demand is heavily concentrated in urban centers like Penn Station/Madison Sq Wes
 ##### Data Audit: 
 * The Details tab provides granular access for auditing high-fare trips, applying the Surge Fee, and validating data integrity.
 
-#Business Impact & Outcomes
+# #Business Impact & Outcomes
 The analysis provided by this dashboard translates directly into the following actionable business outcomes and insights:
 Focus Area	Outcome / Insight Generated
 Demand Forecasting & Pricing	The Time Analysis clearly identifies peak demand periods (Saturday/Sunday and 3 PM - 9 PM daily). This is the key input for the Surge Fee mechanism, allowing the company to dynamically adjust pricing to maximize revenue and balance supply during these windows.
