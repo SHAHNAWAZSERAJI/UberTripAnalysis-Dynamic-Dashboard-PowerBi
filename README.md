@@ -15,8 +15,10 @@ Excel, SQL– Used for data extraction, cleaning, and preliminary transformation
 Data transformation and cleaning layer for reshaping and preparing the data.
 ### 4.📝 Data Modeling: 
 Relationships established between the TRIP DETAILS (fact table) and the LOCATION TABLE (dimension table) via PULocationID and DOLocationID to enable seamless geographic analysis and enable cross-filtering and aggregation..
-🧠 5. DAX Operations (Calculated Measures & Columns): Essential for transforming raw data into meaningful KPIs. Used for calculated measures, dynamic visuals, and conditional logic.
-### 📁 6. File Format – .pbix for development and .png for dashboard previews.
+## 🧠 5. DAX Operations (Calculated Measures & Columns):
+Essential for transforming raw data into meaningful KPIs. Used for calculated measures, dynamic visuals, and conditional logic.
+### 📁 6. File Format –
+.pbix for development and .png for dashboard previews.
 
 ## DAX Operations :- 
 DAX Element	Purpose & Logic	Base Table Columns Used
@@ -29,10 +31,10 @@ Trip Duration (min) (Calculated Column)	Calculates the difference between Drop O
 Avg Trip Time (Measure)	Calculates the average duration of all trips in minutes. Logic: AVERAGE('TRIP DETAILS'[Trip Duration (min)])	TRIP DETAILS[Drop Off Time], TRIP DETAILS[Pickup Time]
 Pickup Hour (Calculated Column)	Extracts the hour (0-23) from the Pickup Time column to enable hourly trend analysis.	TRIP DETAILS[Pickup Time]
 Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Trip' based on the Pickup Hour (e.g., 6 AM - 6 PM is Day, otherwise Night).	TRIP DETAILS[Pickup Time]
-##Data Source
-##Source: Uber trip records of one month from Kaggle.
-                 1. Location Table .
-                 2.Uber Trip Details.
+## Data Source
+## Source: Uber trip records of one month from Kaggle.
+                 * 1. Location Table .
+                 * 2.Uber Trip Details.
 ##Data Structure: The dashboard leverages a star schema model based on two primary tables:
 TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
 Temporal Data: Trip ID, Pickup Time, Drop Off Time.
