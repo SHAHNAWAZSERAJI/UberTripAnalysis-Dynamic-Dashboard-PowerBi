@@ -1,22 +1,22 @@
 # UberTripAnalysis-Dynamic-Dashboard-PowerBi
 # 🚗 UberTripAnalysis-Dynamic-PowerBi-Dashboard: Demand, Revenue, and Efficiency Dashboard
 
-The Uber Trip Analysis Dashboard is a dynamic, interactive data visualization tool designed to provide deep, actionable insights into Uber's ride-hailing operations. It focuses on analyzing key performance indicators (KPIs) related to trip volume, revenue, distance, and duration, enabling operational teams to optimize pricing strategies, improve driver deployment, and understand user behavior across time and geography.
+The Uber Trip Analysis Dynamic Power Bi Dashboard is a dynamic, interactive data visualization tool designed to provide deep, actionable insights into Uber's ride-hailing operations.
+It focuses on analyzing key performance indicators (KPIs) related to trip volume, revenue, distance, and duration, enabling operational teams to optimize pricing strategies, improve driver deployment, and understand user behavior across time and geography.
 
-## Tech Stack
+### Tech Stack
 The dashboard was built using a robust Business Intelligence platform (like Power BI), Sql, Excel and relies heavily on Calculated Columns, Measures and  DAX (Data Analysis Expressions) for creating analytical measures. 
 
-## 📊 Business Intelligence Platform:
+## 1. 📊 Business Intelligence Platform:
 Power BI Desktop– Main data visualization platform used for interactive report creation.
-
-## 📂 Data Preparation:
+### 2. 📂 Data Preparation:
 Excel, SQL– Used for data extraction, cleaning, and preliminary transformation of the TRIP DETAILS and LOCATION TABLE.
-## 📂 Power Query:-
+##  3.📂 Power Query:-
 Data transformation and cleaning layer for reshaping and preparing the data.
-## 📝 Data Modeling: 
+### 4.📝 Data Modeling: 
 Relationships established between the TRIP DETAILS (fact table) and the LOCATION TABLE (dimension table) via PULocationID and DOLocationID to enable seamless geographic analysis and enable cross-filtering and aggregation..
-🧠 DAX Operations (Calculated Measures & Columns): Essential for transforming raw data into meaningful KPIs. Used for calculated measures, dynamic visuals, and conditional logic.
-📁 File Format – .pbix for development and .png for dashboard previews.
+🧠 5. DAX Operations (Calculated Measures & Columns): Essential for transforming raw data into meaningful KPIs. Used for calculated measures, dynamic visuals, and conditional logic.
+### 📁 6. File Format – .pbix for development and .png for dashboard previews.
 
 ## DAX Operations :- 
 DAX Element	Purpose & Logic	Base Table Columns Used
