@@ -32,20 +32,20 @@ Avg Trip Time (Measure)	Calculates the average duration of all trips in minutes.
 Pickup Hour (Calculated Column)	Extracts the hour (0-23) from the Pickup Time column to enable hourly trend analysis.	TRIP DETAILS[Pickup Time]
 Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Trip' based on the Pickup Hour (e.g., 6 AM - 6 PM is Day, otherwise Night).	TRIP DETAILS[Pickup Time]
 ## Data Source
-## Source: Uber trip records of one month from Kaggle.
+#### Source: Uber trip records of one month from Kaggle.
                  * 1. Location Table .
                  * 2.Uber Trip Details.
-##Data Structure: The dashboard leverages a star schema model based on two primary tables:
-TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
-Temporal Data: Trip ID, Pickup Time, Drop Off Time.
-Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
-Operational Data: Trip Distance, Vehicle.
-LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable names.
-Geographic Data: LocationID, Location (Area Name), City.
-#Features:-
-##Business Problem
+####Data Structure: The dashboard leverages a star schema model based on two primary tables:
+               * TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
+               * Temporal Data: Trip ID, Pickup Time, Drop Off Time.
+               * Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
+               * Operational Data: Trip Distance, Vehicle.
+               * LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable names.
+               * Geographic Data: LocationID, Location (Area Name), City.
+### Features:-
+##### Business Problem
 A modern ride-hailing platform must continuously monitor and react to fluctuating demand to ensure service reliability, maximize revenue, and maintain driver satisfaction. Key challenges include: predicting peak hours, ensuring adequate vehicle supply in high-demand zones, and understanding which services (vehicle types) are the most profitable and popular.
-##Goal of the Dashboard
+##### Goal of the Dashboard
 To deliver a comprehensive, multi-layered visual tool that:
 Tracks core operational and financial KPIs in real-time.
 Identifies temporal patterns (peak hours, days of the week) for surge pricing and driver incentive optimization.
@@ -68,20 +68,31 @@ The most frequent pickup and drop-off points are concentrated in key urban cente
 Granular Data Supports Auditing and Validation:
 The Details view allows users to pull up individual trip records for auditing purposes, essential for validating the aggregate trends and investigating any suspicious or outlier data (like the Surge Fee column).
 
-## Overview KPIs (Baseline Performance)
-Total Booking: 103.7K trips handled during the period.
-Total Booking Value: $1.6M in gross revenue generated.
-Avg Trip Distance: 3 miles (Short-haul focus).
-Avg Trip Time: 16 minutes (High operational efficiency).
-Primary Service: UberX is the highest volume and revenue driver.
-Key Geographies: Demand is heavily concentrated in urban centers like Penn Station/Madison Sq West (Most Frequent Pickup).
-##Temporal Insights (Demand & Pricing)
-Peak Surge Windows: Demand surges significantly on Friday and Saturday evenings (Hours 16-23), confirming the optimal time for peak surge pricing and driver incentives.
-Weekly Trend: A marked dip in activity occurs mid-week (Wednesday/Thursday), requiring targeted incentives to boost utilization.
-Time Preference: A preference for Night-time trips is observed, accounting for 65.28% of total bookings.
-##Financial and Compliance Insights
-Payment Type Risk: Cash is the overwhelmingly dominant payment type, necessitating strict controls and reconciliation processes to manage associated financial risks.
-Data Audit: The Details tab provides granular access for auditing high-fare trips, applying the Surge Fee, and validating data integrity.
+#### Overview KPIs (Baseline Performance)
+##### Total Booking: 
+103.7K trips handled during the period.
+##### Total Booking Value: 
+$1.6M in gross revenue generated.
+##### Avg Trip Distance: 
+3 miles (Short-haul focus).
+##### Avg Trip Time: 
+16 minutes (High operational efficiency).
+###### Primary Service: 
+UberX is the highest volume and revenue driver.
+##### Key Geographies: 
+Demand is heavily concentrated in urban centers like Penn Station/Madison Sq West (Most Frequent Pickup).
+#### Temporal Insights (Demand & Pricing)
+##### Peak Surge Windows: 
+* Demand surges significantly on Friday and Saturday evenings (Hours 16-23), confirming the optimal time for peak surge pricing and driver incentives.
+##### Weekly Trend: 
+* A marked dip in activity occurs mid-week (Wednesday/Thursday), requiring targeted incentives to boost utilization.
+#####Time Preference:
+* A preference for Night-time trips is observed, accounting for 65.28% of total bookings.
+#### Financial and Compliance Insights
+##### Payment Type Risk: 
+* Cash is the overwhelmingly dominant payment type, necessitating strict controls and reconciliation processes to manage associated financial risks.
+##### Data Audit: 
+* The Details tab provides granular access for auditing high-fare trips, applying the Surge Fee, and validating data integrity.
 
 #Business Impact & Outcomes
 The analysis provided by this dashboard translates directly into the following actionable business outcomes and insights:
