@@ -52,10 +52,10 @@ A modern ride-hailing platform must continuously monitor and react to fluctuatin
 #### Goal of the Dashboard
 To deliver a comprehensive, multi-layered visual tool that:
 
-        * 1.Tracks core operational and financial KPIs in real-time.
-        * 2.Identifies temporal patterns (peak hours, days of the week) for surge pricing and driver incentive optimization.
-        * 3.Pinpoints high-value geographic zones for strategic driver placement.
-        * 4.Analyzes the performance and profitability of different vehicle types.
+* 1.Tracks core operational and financial KPIs in real-time.
+* 2.Identifies temporal patterns (peak hours, days of the week) for surge pricing and driver incentive optimization.
+* 3.Pinpoints high-value geographic zones for strategic driver placement.
+* 4.Analyzes the performance and profitability of different vehicle types.
         
 #### Walkthrough of Key Visuals: Outcomes & Insights
 
