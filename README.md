@@ -36,13 +36,13 @@ Essential for transforming raw data into meaningful KPIs. Used for calculated me
                  * 1.Location Table .
                  * 2.Uber Trip Details.
 #### Data Structure:
-The dashboard leverages a star schema model based on two primary tables:
-                 * 1.TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
-                 * 2.Temporal Data: Trip ID, Pickup Time, Drop Off Time.
-                 * 3.Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
-                 * 4.Operational Data: Trip Distance, Vehicle.
-                 * 5.LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
-               *    Geographic Data: LocationID, Location (Area Name), City.
+##### The dashboard leverages a star schema model based on two primary tables:
+* 1.TRIP DETAILS (Fact Table): Contains granular data for each ride, including:
+* 2.Temporal Data: Trip ID, Pickup Time, Drop Off Time.
+* 3.Financial/Volume Data: Passenger Count, Payment Type, Fare Amount, Surge Fee.
+* 4.Operational Data: Trip Distance, Vehicle.
+* 5.LOCATION TABLE (Dimension Table): Provides the geographical context for the trips, mapping numeric IDs to readable   names.
+* Geographic Data: LocationID, Location (Area Name), City.
                
 ### Features:-
 
