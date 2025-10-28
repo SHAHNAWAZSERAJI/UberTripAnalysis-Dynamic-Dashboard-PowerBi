@@ -108,11 +108,20 @@ Demand is heavily concentrated in urban centers like Penn Station/Madison Sq Wes
 ##### Data Audit: 
 * The Details tab provides granular access for auditing high-fare trips, applying the Surge Fee, and validating data integrity.
 
-# #Business Impact & Outcomes
+### Business Impact & Outcomes
 The analysis provided by this dashboard translates directly into the following actionable business outcomes and insights:
 Focus Area	Outcome / Insight Generated
-Demand Forecasting & Pricing	The Time Analysis clearly identifies peak demand periods (Saturday/Sunday and 3 PM - 9 PM daily). This is the key input for the Surge Fee mechanism, allowing the company to dynamically adjust pricing to maximize revenue and balance supply during these windows.
-Operational Efficiency	The average trip metrics (3 miles / 16 minutes) serve as an efficiency benchmark. Location analysis allows for proactive driver deployment; focusing on areas like Penn Station and the Upper East Side during peak times ensures less waiting time for customers and higher utilization for drivers.
-Vehicle Strategy	UberX is confirmed as the mass-market volume leader, driving the majority of bookings and revenue. However, services like Uber Black and Uber Comfort should be analyzed for their high Average Booking Value to understand premium segment profitability.
-Financial/Auditing	The dashboard reveals that Cash is the predominant payment type (over 87% of bookings in the overview). This insight mandates robust internal processes for cash handling, reconciliation, and minimizing fraud associated with cash payments.
-Route Optimization	Identification of the Farthest Trip (144.1 Miles) highlights outliers. This data can be used to analyze long-haul trips for specific pricing models or dedicated services that optimize long-distance travel efficiency.
+##### Demand Forecasting & Pricing
+* The Time Analysis clearly identifies peak demand periods (Saturday/Sunday and 3 PM - 9 PM daily).
+* This is the key input for the Surge Fee mechanism, allowing the company to dynamically adjust pricing to maximize revenue and balance supply during these windows.
+##### Operational Efficiency
+* The average trip metrics (3 miles / 16 minutes) serve as an efficiency benchmark.
+* Location analysis allows for proactive driver deployment; focusing on areas like Penn Station and the Upper East Side during peak times ensures less waiting time for customers and higher utilization for drivers.
+##### Vehicle Strategy
+UberX is confirmed as the mass-market volume leader, driving the majority of bookings and revenue. However, services like Uber Black and Uber Comfort should be analyzed for their high Average Booking Value to understand premium segment profitability.
+##### Financial/Auditing
+* The dashboard reveals that Cash is the predominant payment type (over 87% of bookings in the overview). 
+* This insight mandates robust internal processes for cash handling, reconciliation, and minimizing fraud associated with cash payments.
+##### Route Optimization
+* Identification of the Farthest Trip (144.1 Miles) highlights outliers.
+* This data can be used to analyze long-haul trips for specific pricing models or dedicated services that optimize long-distance travel efficiency.
