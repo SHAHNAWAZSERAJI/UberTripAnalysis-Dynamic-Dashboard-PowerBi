@@ -125,3 +125,4 @@ UberX is confirmed as the mass-market volume leader, driving the majority of boo
 ##### Route Optimization
 * Identification of the Farthest Trip (144.1 Miles) highlights outliers.
 * This data can be used to analyze long-haul trips for specific pricing models or dedicated services that optimize long-distance travel efficiency.
+DASHBOARD PREVIEW (https://github.com/SHAHNAWAZSERAJI/UberTripAnalysis-Dynamic-Dashboard-PowerBi/blob/main/overview%20analysis.PNG)
