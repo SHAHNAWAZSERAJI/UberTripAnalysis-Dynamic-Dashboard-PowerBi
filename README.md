@@ -127,3 +127,6 @@ UberX is confirmed as the mass-market volume leader, driving the majority of boo
 * This data can be used to analyze long-haul trips for specific pricing models or dedicated services that optimize long-distance travel efficiency.
   
  ![DASHBOARD PREVIEW].( https://github.com/SHAHNAWAZSERAJI/UberTripAnalysis-Dynamic-Dashboard-PowerBi/blob/main/overview%20analysis.PNG ).
+<img width="909" height="520" alt="overview analysis" src="https://github.com/user-attachments/assets/eac35dcc-c588-4371-a14f-de856f6f7fac" />
+<img width="920" height="521" alt="time analysis" src="https://github.com/user-attachments/assets/39da0956-0e77-4d61-a978-d8f42da5bc7e" />
+<img width="924" height="517" alt="details tab" src="https://github.com/user-attachments/assets/068e214b-b854-45da-b825-6a00eb73027c" />
