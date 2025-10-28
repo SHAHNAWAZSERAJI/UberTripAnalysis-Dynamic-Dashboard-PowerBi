@@ -21,16 +21,16 @@ Essential for transforming raw data into meaningful KPIs. Used for calculated me
 .pbix for development and .png for dashboard previews.
 
 ## DAX Operations :- 
-DAX Element	Purpose & Logic	Base Table Columns Used
-Total Booking (Measure)	Counts the total number of unique trips in the dataset.	TRIP DETAILS[Trip ID]
-Total Booking Value (Measure)	Calculates the sum of all fare amounts across all trips.	TRIP DETAILS[Fare Amount]
-Total Trip Distance (Measure)	Sums the total distance covered by all trips.	TRIP DETAILS[Trip Distance]
-Avg Booking Value (Measure)	Calculates the average fare charged per trip. Logic: [Total Booking Value] / [Total Booking]	TRIP DETAILS[Fare Amount], TRIP DETAILS[Trip ID]
-Avg Trip Distance (Measure)	Calculates the average distance of a trip in miles. Logic: [Total Trip Distance] / [Total Booking]	TRIP DETAILS[Trip Distance], TRIP DETAILS[Trip ID]
-Trip Duration (min) (Calculated Column)	Calculates the difference between Drop Off Time and Pickup Time, converting the result to minutes.	TRIP DETAILS[Drop Off Time], TRIP DETAILS[Pickup Time]
-Avg Trip Time (Measure)	Calculates the average duration of all trips in minutes. Logic: AVERAGE('TRIP DETAILS'[Trip Duration (min)])	TRIP DETAILS[Drop Off Time], TRIP DETAILS[Pickup Time]
-Pickup Hour (Calculated Column)	Extracts the hour (0-23) from the Pickup Time column to enable hourly trend analysis.	TRIP DETAILS[Pickup Time]
-Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Trip' based on the Pickup Hour (e.g., 6 AM - 6 PM is Day, otherwise Night).	TRIP DETAILS[Pickup Time]
+* DAX Element	Purpose & Logic	Base Table Columns Used
+* Total Booking (Measure)	Counts the total number of unique trips in the dataset.	TRIP DETAILS[Trip ID]
+* Total Booking Value (Measure)	Calculates the sum of all fare amounts across all trips.	TRIP DETAILS[Fare Amount]
+* Total Trip Distance (Measure)	Sums the total distance covered by all trips.	TRIP DETAILS[Trip Distance]
+* Avg Booking Value (Measure)	Calculates the average fare charged per trip. Logic: [Total Booking Value] / [Total Booking]	TRIP DETAILS[Fare Amount], TRIP DETAILS[Trip ID]
+* Avg Trip Distance (Measure)	Calculates the average distance of a trip in miles. Logic: [Total Trip Distance] / [Total Booking]	TRIP DETAILS[Trip Distance], TRIP DETAILS[Trip ID]
+* Trip Duration (min) (Calculated Column)	Calculates the difference between Drop Off Time and Pickup Time, converting the result to minutes.	TRIP DETAILS[Drop Off Time], TRIP DETAILS[Pickup Time]
+* Avg Trip Time (Measure)	Calculates the average duration of all trips in minutes. Logic: AVERAGE('TRIP DETAILS'[Trip Duration (min)])	TRIP DETAILS[Drop Off Time], TRIP DETAILS[Pickup Time]
+* Pickup Hour (Calculated Column)	Extracts the hour (0-23) from the Pickup Time column to enable hourly trend analysis.	TRIP DETAILS[Pickup Time]
+* Trip Day/Night (Calculated Column)	Categorizes a trip as 'Day Trip' or 'Night Trip' based on the Pickup Hour (e.g., 6 AM - 6 PM is Day, otherwise Night).	TRIP DETAILS[Pickup Time]
 ## Data Source
 #### Source: Uber trip records of one month from Kaggle.
                  * 1.Location Table .
